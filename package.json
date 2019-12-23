@@ -1,0 +1,21 @@
+{
+  "name": "instagramunfollowers",
+  "version": "1.0.0",
+  "description": "Simple script to check which users didn't return follow (you can check for others accounts also)",
+  "main": "unfollowersSaveToFile.js",
+  "dependencies": {
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.8"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://shearer9@bitbucket.org/shearer9/instagramunfollowers.git"
+  },
+  "author": "Ivan Ostojic",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/shearer9/instagramunfollowers#readme"
+}
