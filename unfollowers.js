@@ -20,7 +20,7 @@ let nextPage
     variables = JSON.stringify({"id": id, "include_reel": true, "fetch_mutual": true, "first": 45})
     await Promise.all([getFollowings(), getFollowers()]);
     let unfollowers = $following.filter(value => !$followers.includes(value))
-    console.log(unfollowers)
+    console.dir(unfollowers, {'maxArrayLength': null})
     console.log('The number of unfollowers: ' + unfollowers.length);
 })();
 

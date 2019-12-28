@@ -32,7 +32,7 @@ function logUnfollowers() {
             if (err) throw err;
             let myFollowings = JSON.parse(data)
             let unfollowers = myFollowings.filter(value => !myFollowers.includes(value))
-            console.log(unfollowers);
+            console.dir(unfollowers, {'maxArrayLength': null})
             console.log('The number of unfollowers:' + unfollowers.length);
             fs.writeFile('unfollowers.txt', JSON.stringify(unfollowers), 'utf-8', (err) => {
                 if (err) throw(err)
